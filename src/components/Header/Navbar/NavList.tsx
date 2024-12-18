@@ -22,13 +22,20 @@ export default function NavList({ item }: Props) {
 
   return (
     <li
-      className="relative"
+      className="relative text-nowrap"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <Link href={item.path} className="hover:text-violet-600">
-        {item.name}
-      </Link>
+      {item.children ? (
+        <span className="hover:text-violet-600 cursor-pointer">
+          {item.name}
+        </span>
+      ) : (
+        <Link href={item.path} className="hover:text-violet-600">
+          {item.name}
+        </Link>
+      )}
+
       {item.children && (
         <Dropdown key={item.name} item={item} isDropped={IsDropped} />
       )}
