@@ -1,4 +1,4 @@
-import { NavItem } from "@/constants/data";
+import { NavItem } from "@/constants/types";
 import Link from "next/link";
 import React from "react";
 

@@ -6,8 +6,8 @@ export default function WebDevelopment() {
   return (
     <main>
       <WebHero />
-      <WebServices />
       <WebPlanning />
+      <WebServices />
     </main>
   );
 }

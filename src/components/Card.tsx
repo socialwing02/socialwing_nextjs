@@ -1,4 +1,4 @@
-import { CardContent } from "@/constants/data";
+import { CardContent } from "@/constants/types";
 import EastIcon from "@mui/icons-material/East";
 import React from "react";
 

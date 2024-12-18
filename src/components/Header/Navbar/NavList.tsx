@@ -1,9 +1,9 @@
 "use client";
 
-import { NavItem } from "@/constants/data";
 import Link from "next/link";
 import React, { useState } from "react";
 import Dropdown from "./Dropdown";
+import { NavItem } from "@/constants/types";
 
 type Props = {
   item: NavItem;

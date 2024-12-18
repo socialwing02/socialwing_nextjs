@@ -1,4 +1,3 @@
-import VerticalMarquee from "@/components/VerticalMarquee";
 import React from "react";
 
 export default function Hero() {

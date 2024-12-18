@@ -1,25 +1,42 @@
-import { webCardContent, WebCardType } from "@/constants/data";
+import { webSectionContent } from "@/constants/data";
+import Image from "next/image";
 import React from "react";
 
 export default function WebServices() {
   return (
-    <div className="w-[min(90vw,calc(100vw-4rem))] grid grid-cols-[repeat(auto-fit,minmax(330px,1fr))] gap-8 ">
-      {webCardContent.map((item) => (
-        <Card key={item.id} item={item} />
+    <section className="flex flex-col gap-16 items-center my-10">
+      {webSectionContent.map((item) => (
+        <div
+          key={item.id}
+          className="flex flex-col lg:flex-row justify-center items-center gap-8 px-3 w-full py-8"
+        >
+          <div
+            className={`w-[min(600px,90vw)] ${
+              item.reverse ? "lg:order-2" : "lg:order-1"
+            }`}
+          >
+            <Image
+              src={item.img}
+              alt={item.title}
+              className="rounded-lg object-cover"
+              layout="responsive"
+            />
+          </div>
+
+          <div
+            className={`${
+              item.reverse ? "lg:order-1" : "lg:order-2"
+            } flex flex-col gap-3`}
+          >
+            <h2 className="text-[clamp(1.8rem,2.2vw,4rem)] pt-3">
+              {item.title}
+            </h2>
+            <p className="w-[min(60ch,90vw)] text-[clamp(1.1rem,1vw,2rem)]">
+              {item.content}
+            </p>
+          </div>
+        </div>
       ))}
-    </div>
-  );
-}
-
-function Card({ item }: { item: WebCardType }) {
-  return (
-    <div className="bg-white rounded-lg h-[280px] shadow-md border-2 flex flex-col gap-2  mt-[5rem] p-4">
-      <item.icon fontSize="large" className="text-violet-700" />
-
-      <div>
-        <h2 className="text-[clamp(1.5rem,1.8vw,4rem)]">{item.title}</h2>
-        <p className="w-[35ch]">{item.content}</p>
-      </div>
-    </div>
+    </section>
   );
 }
