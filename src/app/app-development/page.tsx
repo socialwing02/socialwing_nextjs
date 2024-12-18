@@ -1,13 +1,13 @@
-import React from "react";
-import appdevelopemnt from "@/assets/images/appdevelopement/socialwing_app_developement.png";
-import Image from "next/image";
+import AppHero from "@/pages/Service/AppDevelopement/AppHero";
+import Icon from "@/pages/Service/AppDevelopement/Icon";
+import ScrollPage from "@/pages/Service/AppDevelopement/Scrol";
 
-export default function AppDevelopment() {
+export default function WebDevelopment() {
   return (
-    <div className="flex justify-end mt-3  ">
-      <div className="w-[500px]  rounded">
-        <Image src={appdevelopemnt} alt="" />
-      </div>
-    </div>
+    <main>
+      <AppHero />
+      <Icon />
+      <ScrollPage />
+    </main>
   );
 }
