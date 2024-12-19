@@ -11,7 +11,7 @@ export default function Dropdown({
 }) {
   return (
     <div
-      className={`absolute border-t-2 border-t-violet-600 z-30 top-6 left-[-15] w-fit border rounded-lg text-nowrap p-4 shadow-md bg-white ${
+      className={`absolute border-t-2 border-t-violet-600 z-[999] top-6 left-[-15] w-fit border rounded-lg text-nowrap p-4 shadow-md bg-white ${
         isDropped ? "block" : "hidden"
       }`}
     >
