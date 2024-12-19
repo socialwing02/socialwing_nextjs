@@ -1,5 +1,12 @@
+import Form from "@/components/Form";
 import React from "react";
 
 export default function Contact() {
-  return <div>page</div>;
+  return (
+    <main>
+      <div className="flex justify-center items-center my-[2rem]">
+        <Form />
+      </div>
+    </main>
+  );
 }

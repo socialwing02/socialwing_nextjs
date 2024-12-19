@@ -47,3 +47,28 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+#graphic-img-wrapper {
+  animation: fade-left 1s ease-out forwards;
+}
+
+@keyframes fade-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+input,
+textarea {
+  outline-color: transparent;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  appearance: none;
+}

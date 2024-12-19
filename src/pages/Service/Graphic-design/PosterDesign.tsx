@@ -6,31 +6,40 @@ import React, { useEffect, useState } from "react";
 
 export default function PosterDesign() {
   const [count, setCount] = useState(0);
+  const [isChanging, setIsChanging] = useState(false);
   const image = marqueeImaages[count];
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setCount((prev) => (prev + 1) % marqueeImaages.length);
-    }, 3000);
+      setIsChanging(true);
+      setTimeout(() => {
+        setCount((prev) => (prev + 1) % marqueeImaages.length);
+      }, 500);
 
-    console.log(count);
+      setTimeout(() => {
+        setIsChanging(false);
+      }, 1000);
+    }, 3000);
 
     return () => clearInterval(timer);
   }, []);
 
   return (
     <div className="flex justify-center items-center my-[3rem] gap-16">
-      <div className="w-[600px] h-[500px] ">
+      <div className="w-[600px] h-[500px] relative overflow-hidden">
         <Image
           src={image}
           alt="Poster Design"
-          className="w-full h-full object-cover"
+          className={`transition-opacity duration-100 ${
+            isChanging ? "opacity-0" : "opacity-100"
+          }`}
+          layout="fill"
+          objectFit="cover"
         />
       </div>
 
       <article className="w-[min(500px,90vw)]">
         <h1>Poster Designs</h1>
-
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias
           quis ea consectetur reprehenderit corporis sed fugiat, voluptas

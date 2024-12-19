@@ -9,7 +9,7 @@ export default function GraphicDesign() {
       <GraphicHero />
       <GraphicEvalute />
 
-      <PosterDesign />
+      {/* <PosterDesign /> */}
     </main>
   );
 }
