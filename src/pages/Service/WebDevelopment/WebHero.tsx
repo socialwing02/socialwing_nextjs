@@ -13,13 +13,16 @@ export default function WebHero() {
 
       <article className=" flex flex-col gap-4 w-[min(60ch,90vw)] lg:mt-[5rem]">
         <h1 className="text-[clamp(1.3rem,2.6vw,4rem)] text-pretty">
-          Stunning Websites Designed to Captivate and Convert
+          Develop the websites that connect with your brand’s identity
         </h1>
         <p className="text-[clamp(1rem,1.3vw,3rem)] ">
-          Your website is more than a digital space—it&apos;s a powerful tool
-          for connection and growth. Let us design and develop a web solution
-          that&apos;s fast, secure, and visually compelling, while aligning
-          perfectly with your brand&apos;s goals.
+          Website development combines design, programming, content creation,
+          and server-side operations to build functional and visually appealing
+          web platforms. It includes client-side interactions, database
+          organization, and performance optimization. The goal is to create
+          seamless digital experiences that engage users, ensuring high
+          performance across devices and web browsers, while providing an
+          exceptional user experience.
         </p>
 
         <Button className="">Book Consulting</Button>
