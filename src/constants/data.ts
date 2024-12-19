@@ -110,42 +110,42 @@ export const webCardContent: WebCardType[] = [
     title: "Planning",
     icon: ShoppingCartCheckoutIcon,
     content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut sunt cumque dolore rerum quidem voluptatibus cum? Facere doloremque repudiandae alias ab eaque qui sapiente nam, laborum maiores, numquam est libero.",
+      "As a web agency, we understand client goals and target audience, create content strategies, design user-friendly layouts, and choose the right tech. We focus on SEO, testing, and post-launch support for optimal performance.",
   },
   {
     id: 2,
     title: "Designing",
     icon: IntegrationInstructionsIcon,
     content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut sunt cumque dolore rerum quidem voluptatibus cum? Facere doloremque repudiandae alias ab eaque qui sapiente nam, laborum maiores, numquam est libero.",
+      "We build visually stunning, user-friendly websites, focusing on design elements that reflect your brand. Our responsive, accessible designs enhance user engagement and are aligned with your business goals.",
   },
   {
     id: 3,
     title: "Develpoment",
     icon: AdsClickIcon,
     content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut sunt cumque dolore rerum quidem voluptatibus cum? Facere doloremque repudiandae alias ab eaque qui sapiente nam, laborum maiores, numquam est libero.",
+      "We develop fast, secure, and scalable websites using the latest technologies. Our clean code ensures seamless performance, SEO optimization, and security. With ongoing support, we help your website grow with your business.",
   },
   {
     id: 4,
     title: "Testing",
     icon: AdsClickIcon,
     content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut sunt cumque dolore rerum quidem voluptatibus cum? Facere doloremque repudiandae alias ab eaque qui sapiente nam, laborum maiores, numquam est libero.",
+      "We conduct thorough testing to ensure your website functions flawlessly across devices and browsers. This includes performance checks, security testing, and user experience assessments for a seamless, bug-free launch.",
   },
   {
     id: 5,
     title: "Deployment",
     icon: AdsClickIcon,
     content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut sunt cumque dolore rerum quidem voluptatibus cum? Facere doloremque repudiandae alias ab eaque qui sapiente nam, laborum maiores, numquam est libero.",
+      "We develop fast, secure, and scalable websites using the latest technologies. Our clean, efficient code ensures seamless functionality, prioritizing security and offering ongoing support to meet your growing business needs.",
   },
   {
     id: 6,
     title: "Monitoring",
     icon: AdsClickIcon,
     content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut sunt cumque dolore rerum quidem voluptatibus cum? Facere doloremque repudiandae alias ab eaque qui sapiente nam, laborum maiores, numquam est libero.",
+      "Continuous monitoring ensures your website is secure, fast, and reliable. We track performance and user behavior, optimizing content and addressing issues before they affect performance, allowing you to grow your business.",
   },
 ];
 
