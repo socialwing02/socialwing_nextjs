@@ -14,7 +14,7 @@ export default function Checkbox({ label, name }: Props) {
         id=""
         className="rounded-full bg-gray-700"
       />
-      <label className="text-sm" htmlFor={name}>
+      <label className="text-sm text-nowrap" htmlFor={name}>
         {label}
       </label>
     </div>

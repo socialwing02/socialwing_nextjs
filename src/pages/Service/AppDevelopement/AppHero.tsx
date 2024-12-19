@@ -18,8 +18,8 @@ export default function AppHero() {
           turn your ideas into reality. We understand the importance of a mobile
           presence and are dedicated to delivering applications that exceed user
           expectations. Choose us as your mobile app development partner and
-          let's create a mobile experience that captivates your users and drives
-          your success.
+          let&apos;s create a mobile experience that captivates your users and
+          drives your success.
         </p>
         <div className="mt-4 justify-self-end pr-[8rem] ">
           <Button>GET PROPOSAL</Button>

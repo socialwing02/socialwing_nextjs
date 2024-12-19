@@ -1,4 +1,4 @@
-import { navlist, NavlistType } from "@/constants/data";
+import { NavlistType } from "@/constants/data";
 import Link from "next/link";
 import React from "react";
 

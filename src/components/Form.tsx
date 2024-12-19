@@ -4,8 +4,8 @@ import Checkbox from "./ui/Checkbox";
 
 export default function Form() {
   return (
-    <form className="w-[min(600px,90vw)] h-[500px] border-2 p-6">
-      <div className="grid grid-cols-2 gap-3">
+    <form className="w-[min(600px,90vw)] h-[500px]  p-6">
+      <div className="grid grid-cols-2 gap-7">
         <Input
           type="text"
           label="First Name"
@@ -33,19 +33,23 @@ export default function Form() {
       </div>
 
       <div className="grid gap-3 my-6">
-        <h2>Select Subjects</h2>
+        <h2 className="font-semibold">Select Subjects</h2>
 
-        <div className="flex gap-4">
+        <div className="flex gap-10">
           <Checkbox label="Product enquiry" name="product" />
-          <Checkbox label="Product enquiry" name="product" />
-          <Checkbox label="Product enquiry" name="product" />
-          <Checkbox label="Product enquiry" name="product" />
+          <Checkbox label="Job enquiry" name="product" />
+          <Checkbox label="Business enquiry" name="product" />
         </div>
       </div>
 
-      <div>
-        <h2>Message</h2>
-        <textarea name="" id="" className="border-b-2 w-[400px]"></textarea>
+      <div className="grid gap-6">
+        <h2 className="font-semibold">Message</h2>
+        <textarea
+          name=""
+          id=""
+          rows={5}
+          className="border-2 w-[400px]"
+        ></textarea>
       </div>
     </form>
   );
