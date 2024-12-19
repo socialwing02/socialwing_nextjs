@@ -152,39 +152,39 @@ export const webCardContent: WebCardType[] = [
 export const webSectionContent: WebSectionType[] = [
   {
     id: 1,
-    title: "E-commerce Solutions",
+    title: "Advanced E-Commerce website",
     content:
-      "Empower your business with cutting-edge e-commerce platforms. We create secure, scalable, and user-friendly online stores tailored to your business needs. From streamlined checkout processes to advanced analytics, we ensure a seamless shopping experience for your customers and a growth-driven tool for your business.",
+      "Build an advanced e-commerce website that delivers seamless shopping experiences. With custom designs, secure payment systems, and optimized performance, we help you boost sales and enhance user engagement.",
     img: e_commerce,
   },
   {
     id: 2,
-    title: "Tailor-Made Web Development",
+    title: "Custom Websites for Business",
     content:
-      "Every business is unique, and so should be its digital presence. Our tailor-made solutions reflect your brand's identity and meet your specific needs. From conceptualization to launch, we deliver designs that inspire and functionality that delivers results. Elevate your online presence with a website built just for you.",
+      "We build custom websites tailored to your business goals, offering unique designs, seamless functionality, and optimized user experiences to help you achieve success and stand out in the digital landscape.",
     img: tailor_made,
     reverse: true,
   },
   {
     id: 3,
-    title: "Engaging & Responsive Web Designs",
+    title: "Engaging Responsive Web Designs",
     content:
-      "Your website should look amazing on every screen. Our responsive web designs adapt seamlessly to any device, providing a flawless user experience. Enhance engagement with intuitive navigation, eye-catching visuals, and fast load times that captivate your audience and drive conversions.",
+      "Responsive web designs that adapt to any device, offering a seamless user experience. We focus on engaging layouts that capture attention and encourage interaction. Stay connected with users across all platforms",
     img: responsive,
   },
   {
     id: 4,
-    title: "Portfolio Websites",
+    title: "Portfolio Sites to Show Your Talent",
     content:
-      "Showcase your work and leave a lasting impression with a professionally designed portfolio. We create visually appealing websites that highlight your expertise and achievements. Let your portfolio speak volumes about your skills, with layouts that are as dynamic and innovative as you are.",
+      "Custom portfolio websites designed to showcase your unique talent and skills. We create visually appealing, personalized layouts that make a lasting impression. Highlight your work with a site that reflects your expertise",
     img: portfolio,
     reverse: true,
   },
   {
     id: 5,
-    title: "SEO",
+    title: "SEO-Friendly Web Development",
     content:
-      "Showcase your work and leave a lasting impression with a professionally designed portfolio. We create visually appealing websites that highlight your expertise and achievements. Let your portfolio speak volumes about your skills, with layouts that are as dynamic and innovative as you are.",
+      "SEO-friendly web development ensures your website ranks higher on search engines. We design sites with optimized content, fast loading speeds, and mobile responsiveness to boost visibility and drive organic traffic. Stay ahead of the competition with a search engine-friendly site",
     img: seo,
   },
 ];

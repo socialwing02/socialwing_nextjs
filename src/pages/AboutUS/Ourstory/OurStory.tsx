@@ -4,7 +4,7 @@ import { marqueeImaages } from "@/constants/data";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
-export default function PosterDesign() {
+export default function OurStory() {
   const [count, setCount] = useState(0);
   const image = marqueeImaages[count];
 
