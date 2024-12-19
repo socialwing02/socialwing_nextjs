@@ -7,7 +7,6 @@ import Image from "next/image";
 export default function Scrol() {
   return (
     <div className="bg-[#67309c] min-h-screen flex flex-col items-start justify-start py-10 px-6">
-      {/* Mobile App Development Card */}
       <div className="w-full md:w-1/2 bg-gray-100 p-6 mb-6 rounded-lg shadow-lg">
         <h3 className="text-2xl font-bold text-gray-800 mb-4">
           Mobile App Development
@@ -39,7 +38,6 @@ export default function Scrol() {
         </ul>
       </div>
 
-      {/* iOS App Development Card */}
       <div className="w-full md:w-1/2 bg-gray-100 p-6 mb-6 rounded-lg shadow-lg">
         <h3 className="text-2xl font-bold text-gray-800 mb-4">
           iOS App Development
@@ -69,7 +67,6 @@ export default function Scrol() {
         </ul>
       </div>
 
-      {/* React Native App Development Card */}
       <div className="w-full md:w-1/2 bg-gray-100 p-6 rounded-lg shadow-lg">
         <h3 className="text-2xl font-bold text-gray-800 mb-4">
           React Native App Development
@@ -97,6 +94,11 @@ export default function Scrol() {
             updates.
           </li>
         </ul>
+      </div>
+      <div>
+        <Image src={icon1} alt="icon1" />
+        <Image src={icon2} alt="icon2" />
+        <Image src={icon3} alt="icon3 /"></Image>{" "}
       </div>
     </div>
   );
