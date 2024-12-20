@@ -1,4 +1,6 @@
-import { webSectionContent } from "@/constants/data"; // Assuming marqueeImaages is an array of image paths
+"use client";
+
+import { marqueeImaages } from "@/constants/data"; // Assuming marqueeImaages is an array of image paths
 import Image from "next/image";
 
 export default function PosterDesign() {
