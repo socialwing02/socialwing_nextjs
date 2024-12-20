@@ -188,3 +188,40 @@ export const webSectionContent: WebSectionType[] = [
     img: seo,
   },
 ];
+
+import poster1 from "@/assets/images/posters/poster1.png";
+import poster2 from "@/assets/images/posters/poster2.png";
+import poster3 from "@/assets/images/posters/poster3.png";
+import poster4 from "@/assets/images/posters/poster4.png";
+import poster5 from "@/assets/images/posters/poster5.png";
+import poster6 from "@/assets/images/posters/poster6.png";
+import poster8 from "@/assets/images/posters/poster8.png";
+import poster9 from "@/assets/images/posters/poster9.png";
+import poster10 from "@/assets/images/posters/poster10.png";
+import poster11 from "@/assets/images/posters/poster11.png";
+import poster13 from "@/assets/images/posters/poster13.png";
+import poster14 from "@/assets/images/posters/poster14.png";
+import poster15 from "@/assets/images/posters/poster15.png";
+
+export const graphic_poster = [
+  poster1,
+  poster2,
+  poster3,
+  poster4,
+  poster5,
+  poster6,
+  poster8,
+  poster9,
+  poster10,
+  poster11,
+  poster13,
+  poster14,
+  poster15,
+];
+
+export const appScrollData = [
+  {
+    text: "App Development",
+    card: "",
+  },
+];

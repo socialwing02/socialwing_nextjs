@@ -6,16 +6,14 @@ type Props = {
 };
 
 export default function Button({ children, className }: Props) {
-  let defaultClass =
+  const defaultClass =
     "bg-black text-white py-2 px-2 rounded-lg hover:bg-gray-800 w-max";
 
-  if (className) {
-    defaultClass += className;
-  }
+  const mergedClass = className ? `${defaultClass} ${className}` : defaultClass;
 
   return (
     <div>
-      <button className={defaultClass}>{children}</button>
+      <button className={mergedClass}>{children}</button>
     </div>
   );
 }

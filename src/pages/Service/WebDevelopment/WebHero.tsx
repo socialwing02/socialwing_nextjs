@@ -19,13 +19,10 @@ export default function WebHero() {
           Website development combines design, programming, content creation,
           and server-side operations to build functional and visually appealing
           web platforms. It includes client-side interactions, database
-          organization, and performance optimization. The goal is to create
-          seamless digital experiences that engage users, ensuring high
-          performance across devices and web browsers, while providing an
-          exceptional user experience.
+          organization, and performance optimization.
         </p>
 
-        <Button className="">Book Consulting</Button>
+        <Button>Book Consulting</Button>
       </article>
     </section>
   );

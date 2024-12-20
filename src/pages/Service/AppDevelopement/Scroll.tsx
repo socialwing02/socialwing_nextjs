@@ -1,47 +1,57 @@
-import React from "react";
-import icon1 from "@/assets/images/appdevelopement/0c893ec8467f30315337c5a2b320c010.jpg";
-import icon2 from "@/assets/images/appdevelopement/81463cce235952ec80ca65677a0f5ff2.jpg";
-import icon3 from "@/assets/images/appdevelopement/f153deee321823100bdf5e53bced74dd.jpg";
+"use client";
+
+import React, { useRef } from "react";
+// import icon2 from "@/assets/images/appdevelopement/81463cce235952ec80ca65677a0f5ff2.jpg";
+// import icon3 from "@/assets/images/appdevelopement/f153deee321823100bdf5e53bced74dd.jpg";
 import Image from "next/image";
-import Button from "@/components/ui/Button";
+import { useInView } from "framer-motion";
+import ScrollCard from "./scrollText/ScrollCard";
+// import Button from "@/components/ui/Button";
 
-export default function Scrol() {
+export default function Scroll() {
   return (
-    <div className="bg-[#67309c] min-h-screen flex flex-row items-start justify-between py-10 px-6 sticky top-0">
-      {/* Text content */}
-      <div className="flex flex-col w-full md:w-1/2 space-y-6 overflow-auto">
-        <div className="bg-gray-100 p-6 rounded-lg shadow-lg">
-          <h3 className="text-2xl font-bold text-gray-800 mb-4">
-            Mobile App Development
-          </h3>
-          <p className="text-gray-700 mb-4">
-            Android dominates the smartphone market with its open-source
-            flexibility and wide user base. Our native app development service
-            focuses on creating applications specifically for Android devices,
-            ensuring optimal performance and compatibility. We leverage the
-            latest Android technologies to deliver apps that offer:
-          </p>
-          <ul className="list-disc pl-5 text-gray-700 space-y-2">
-            <li>
-              <strong>Seamless User Experience:</strong> Intuitive interfaces
-              that resonate with users.
-            </li>
-            <li>
-              <strong>High Performance:</strong> Smooth, fast, and responsive
-              applications.
-            </li>
-            <li>
-              <strong>Enhanced Security:</strong> Robust security measures to
-              protect sensitive data.
-            </li>
-            <li>
-              <strong>Google Play Integration:</strong> Complete integration
-              with Google’s ecosystem for easy app distribution and updates.
-            </li>
-          </ul>
-        </div>
+    <div className=" bg-black w-full flex  items-start gap-10  py-10 px-6 ">
+      <div className="w-full py-[50vh]">
+        <Card />
+        <Card />
+        <Card />
+      </div>
 
-        <div className="bg-gray-100 p-6 rounded-lg shadow-lg">
+      <ScrollCard />
+    </div>
+  );
+}
+
+function Card() {
+  const ref = useRef<HTMLDivElement>(null);
+
+  const isView = useInView(ref, { margin: "-50% 0px -50% 0px" });
+
+  console.log(isView);
+
+  return (
+    <>
+      <div ref={ref} className=" my-[10rem] p-6 rounded-lg shadow-lg w-[700px]">
+        <h3 className="text-2xl font-bold text-gray-800 mb-4">
+          Mobile App Development
+        </h3>
+        <p
+          className="text-gray-700 mb-4 transition-colors"
+          style={{ color: isView ? "white" : "" }}
+        >
+          Android dominates the smartphone market with its open-source
+          flexibility and wide user base. Our native app development service
+          focuses on creating applications specifically for Android devices,
+          ensuring optimal performance and compatibility. We leverage the latest
+          Android technologies to deliver apps that offer:
+        </p>
+      </div>
+    </>
+  );
+}
+
+{
+  /*   <div className="bg-gray-100 p-6 rounded-lg shadow-lg">
           <h3 className="text-2xl font-bold text-gray-800 mb-4">
             iOS App Development
           </h3>
@@ -99,11 +109,5 @@ export default function Scrol() {
           </ul>
         </div>
       </div>
-
-      {/* Images */}
-      <div className="flex flex-col place-items-center space-y-6 w-full md:w-1/2 mt-[300px]">
-        <Image src={icon1} alt="icon1" className="w-3/4 rounded-lg shadow-lg" />
-      </div>
-    </div>
-  );
+ */
 }

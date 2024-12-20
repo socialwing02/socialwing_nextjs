@@ -26,7 +26,7 @@ export default function GraphicHero() {
           voluptate facilis consequatur a.
         </p>
 
-        <Button>Enquiry Now</Button>
+        <Button className="bg-white text-black">Enquiry Now</Button>
       </div>
     </section>
   );
